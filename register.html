@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form">
+        <h>Medical Appointment Reminder System</h><br><br><br>
+        <b><label for="name">Patient Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="phone">Mobile number:</label>
+        <input type="number" id="phone" name="phone" required><br>
+        <label for="mail">E mail address:</label>
+        <input type="mail" id="mail" name="mail" required><br>
+        <label for="date">Appointment date:</label>
+        <input type="date" id="date" name="date" required><br>
+        <label for="time">Appointment Time:</label>
+        <input type="time" id="time" name="time" required><br>
+        <label for="doctor">Doctor's Name</label>
+        <input type="text" id="doctor" name="doctor" required><br>
+        <label for="reason">Reason</label>
+        <input type="text" id="reason" name="reason" required></b><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('form').addEventListener('submit', function(event){
+            const name=documnent.getElementById('name').value;
+            const phone=documnent.getElementById('phone').value;
+            const mail=documnent.getElementById('mail').value;
+            const date=documnent.getElementById('date').value;
+            const time=documnent.getElementById('time').value;
+            const doctor=documnent.getElementById('doctor').value;
+            const reason=documnent.getElementById('reason').value;
+
+            console.log("Name:", name);
+            console.log("Phone:", phone);
+            console.log("Email:", mail);
+            console.log("Date:", date);
+            console.log("Time:", time);
+            console.log("Doctor:", doctor);
+            console.log("Reason:", reason);
+        })
+    </script>
+</body>
+</html>
